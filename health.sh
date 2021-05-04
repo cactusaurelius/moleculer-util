@@ -1,6 +1,6 @@
 npm list -g | grep moleculer-cli || npm install -g moleculer-cli
 
-curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/cactusaurelius/moleculer-util/develop/moleculer.config.js --output moleculer.config.js
+curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/cactusaurelius/moleculer-util/develop/configs/moleculer.config.js --output moleculer.config.js
 # Use $NAMESPACE $TRANSPORTER evironment variables
 moleculer call "\$node.knwtHealth" --transporter nats --ns sea --config moleculer.config.js
 rm moleculer.config.js 
