@@ -5,7 +5,7 @@ module.exports = {
     $node: {
       actions: {
         // Call as `$node.hello`
-        hello(ctx) {
+        knwtHealth(ctx) {
           //   const broker = this.broker;
           return ctx.call("$node.list").then((nodes) => {
             return Promise.all(
